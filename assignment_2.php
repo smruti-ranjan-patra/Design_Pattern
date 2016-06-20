@@ -2,12 +2,12 @@
 class Connection
 {
 	// Member variables
-	private static $conn = 0;
+	public static $conn = 0;
 	private $host_name = null;
 	private $user_name = null;
 	private $password = null;
 	private $db_name = null;
-	private static $connection_obj = null;
+	public static $connection_obj = null;
 
 	private function __construct()
 	{
