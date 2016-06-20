@@ -20,5 +20,5 @@ class create_connection
 		return $this->conn;
 	}
 }
-$obj = new create_connection;
+$obj = new create_connection();
 ?>

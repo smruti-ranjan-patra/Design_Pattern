@@ -11,12 +11,11 @@ class Nexa_order
 	private $models = array();
 	private $car = NULL;
 
-
 	/**
 	* To place order
 	*
 	* @access public
-	* @param  void
+	* @param  string $model
 	* @return array
 	*/
 	public function placeOrder($model)
@@ -37,6 +36,8 @@ class Manufacture_car
 		$this->model = $maufacture_model;
 	}
 }
-$obj = new Nexa_order;
+
+$obj = new Nexa_order();
 $obj->placeOrder('Sedan');
+
 ?>

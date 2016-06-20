@@ -1,6 +1,7 @@
 <?php
 class Connection
 {
+	// Member variables
 	private static $conn = 0;
 	private $host_name = null;
 	private $user_name = null;
@@ -26,14 +27,14 @@ class Connection
 	*/
 	public static function check_connection()
 	{
-		if(self::$connection_obj == null)
+		if(self::$connection_obj == NULL)
 		{
 			self::$connection_obj = new connection;
 		}
 		return self::$connection_obj;
 	}
 }
-$obj = new Connection;
+$obj = new Connection();
 $obj = database::check_connection();
 
 ?>
