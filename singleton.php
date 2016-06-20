@@ -1,11 +1,19 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Custom_watch
 {
 	// Member variables
 	private static $watch;
 
-	// Private Constructor to restrict the use of new keyword
+	// Private Constructor to restrict the use of new keyword of instantiating an object
 	private function __construct()
 	{
 
@@ -25,8 +33,8 @@ class Custom_watch
 		{
 			self::$watch = new Custom_watch();
 		}
-		return self::$watch;
 		self::$watch->display_weather();
+		return self::$watch;
 	}
 
 	/**
@@ -36,7 +44,7 @@ class Custom_watch
 	* @param  void
 	* @return void
 	*/
-	public function display_weather()
+	public static function display_weather()
 	{
 		echo "Display weather";
 	}

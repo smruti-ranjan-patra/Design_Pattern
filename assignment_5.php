@@ -4,9 +4,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Paypal
 {
-
 	function __construct()
 	{
 		echo "Paypal";
@@ -25,6 +29,11 @@ class Paypal
 	}
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Credit_card
 {
 	function __construct()
@@ -44,9 +53,14 @@ class Credit_card
 		echo "Pay by Credit card Interface";
 	}
 }
+
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class My_cart
 {
-
 	/**
 	* Checks the amount to be paid
 	*

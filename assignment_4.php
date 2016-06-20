@@ -1,12 +1,14 @@
 <?php
 
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
-
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Mailer
 {
 	/* Member variables */
@@ -32,8 +34,6 @@ class Mailer
 			echo 'new email_id - ' . $email_id . ' added. ';
 		}
 	}
-
-
 
 	/**
 	* Delete email id form email list
@@ -78,6 +78,12 @@ class Mailer
 		}
 	}
 }
+
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Watcher
 {
 	/* Member variables */

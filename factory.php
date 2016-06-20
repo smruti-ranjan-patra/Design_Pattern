@@ -1,11 +1,21 @@
 <?php
 define("PI", 22/7, TRUE);
 
+/**
+* Interface
+*
+* @author Smruti Ranjan
+*/
 interface Shape
 {
 	public function area();
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Rectangle implements Shape
 {
 	// data members
@@ -38,6 +48,11 @@ class Rectangle implements Shape
 	}
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Circle implements Shape
 {
 	// Data members
@@ -68,6 +83,11 @@ class Circle implements Shape
 	}
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Shape_factory
 {
 	/**

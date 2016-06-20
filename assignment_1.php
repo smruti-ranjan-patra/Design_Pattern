@@ -1,5 +1,10 @@
 <?php
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class create_connection
 {
 	private $host_name = 'localhost';
@@ -8,6 +13,13 @@ class create_connection
 	private $db_name = 'registration';
 	private $conn = '';
 
+	/**
+	* Constructor to create connection
+	*
+	* @access public
+	* @param  void
+	* @return object
+	*/
 	function __construct()
 	{
 		$this->conn = mysqli_connect($this->host_name, $this->user_name, $this->password, $this->db_name);
@@ -16,7 +28,6 @@ class create_connection
 		{
 			echo "Connection failed: " . mysqli_connect_error();
 		}
-
 		return $this->conn;
 	}
 }

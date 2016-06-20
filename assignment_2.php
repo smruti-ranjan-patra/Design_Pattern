@@ -1,4 +1,14 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Connection
 {
 	// Member variables
@@ -9,6 +19,13 @@ class Connection
 	private $db_name = null;
 	public static $connection_obj = null;
 
+	/**
+	* Constructor to initialize
+	*
+	* @access public
+	* @param  void
+	* @return void
+	*/
 	private function __construct()
 	{
 		$this->host_name = 'localhost';
@@ -30,11 +47,12 @@ class Connection
 		if(self::$connection_obj == NULL)
 		{
 			self::$connection_obj = new connection;
+			echo "New connection created";
 		}
 		return self::$connection_obj;
 	}
 }
-$obj = new Connection();
-$obj = database::check_connection();
+
+$obj = Connection::check_connection();
 
 ?>

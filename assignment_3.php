@@ -4,6 +4,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Nexa_order
 {
 
@@ -25,12 +30,24 @@ class Nexa_order
 		return $this->models;
 	}
 }
+
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Manufacture_car
 {
 	// Member variables
 	private $model = '';
 
-	// Parameterized constructor
+	/**
+	* Constructor to assign the model
+	*
+	* @access public
+	* @param  string $maufacture_model
+	* @return void
+	*/
 	function __construct($maufacture_model)
 	{
 		$this->model = $maufacture_model;

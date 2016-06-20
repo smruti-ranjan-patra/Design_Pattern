@@ -1,15 +1,19 @@
 <?php
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Veg
 {
-
 	function __construct()
 	{
 		echo "Enjoy a veg meal" . "<br>";
 	}
 
 	/**
-	* Display required payment portal
+	* Display appropriate Menu
 	*
 	* @access public
 	* @param  void
@@ -21,6 +25,11 @@ class Veg
 	}
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Non_veg
 {
 	function __construct()
@@ -29,7 +38,7 @@ class Non_veg
 	}
 
 	/**
-	* Display required Menu
+	* Display appropriate Menu
 	*
 	* @access public
 	* @param  void
@@ -40,6 +49,12 @@ class Non_veg
 		echo "Please select items from our Non-veg Menu" . "<br>";
 	}
 }
+
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Choice
 {
 	/**
@@ -56,7 +71,7 @@ class Choice
 			$menu_obj = new Veg();
 			$menu_obj->display();
 		}
-		elseif(strcasecmp($food_type, 'veg') == 0)
+		elseif(strcasecmp($food_type, 'non-veg') == 0)
 		{
 			$menu_obj = new Non_veg();
 			$menu_obj->display();

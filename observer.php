@@ -3,6 +3,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Database_operation
 {
 	// Data members
@@ -58,6 +63,11 @@ class Database_operation
 	}
 }
 
+/**
+* Super Class
+*
+* @author Smruti Ranjan
+*/
 class Log
 {
 	// Data members
