@@ -46,13 +46,17 @@ class Connection
 	{
 		if(self::$connection_obj == NULL)
 		{
-			self::$connection_obj = new connection;
-			echo "New connection created";
+			self::$connection_obj = new Connection();
 		}
 		return self::$connection_obj;
 	}
 }
 
 $obj = Connection::check_connection();
-
+var_dump(Connection::check_connection());
+echo "<br>";
+var_dump(Connection::check_connection());
+echo "<br>";
+var_dump(Connection::check_connection());
+echo "<br>";
 ?>
